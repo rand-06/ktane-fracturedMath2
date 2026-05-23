@@ -27,6 +27,9 @@ public class fracturedMath : MonoBehaviour
 	private int selectedNumber = -1;
 	
 	private bool moduleSelected;
+	
+	static int ModuleIdCounter;
+	int ModuleId;
 
 	void multiplyButtonPress()
 	{
@@ -41,6 +44,10 @@ public class fracturedMath : MonoBehaviour
 		}
 		nextMultiplier = multipliers.PickRandom();
 		multiplierText.text = "×" + nextMultiplier.ToString("D2");
+		Debug.LogFormat("[Shattered Math #{0}] New fractions: {1}",
+			ModuleId,
+			Enumerable.Range(0, currentNumerators.Count).Aggregate("", (a,b)=>a + ", "+currentNumerators[b]+"/"+currentDenominators[b])
+			);
 		refreshTexts();
 	}
 
@@ -103,10 +110,10 @@ public class fracturedMath : MonoBehaviour
 			new List<int> { 2, 5, 8 }
 		};
 		int nextMultiplier1;
-		for (int i = 0; i < 10; i++)
+		for (int _ = 0; _ < 10; _++)
 		{
 			nextMultiplier1 = multipliers.PickRandom();
-			for (int j = 0; j < 6; j++)
+			for (int i = 0; i < 6; i++)
 			{
 				int moduleNumerator =
 					currentNumerators1[indices[i][0]] * currentDenominators1[indices[i][1]] *
@@ -135,7 +142,7 @@ public class fracturedMath : MonoBehaviour
 
 		return true;
 	}
-	
+	void Awake(){ModuleId=++ModuleIdCounter;}
 	void Start ()
 	{
 		GetComponent<KMSelectable>().OnFocus += delegate { moduleSelected = true; };
