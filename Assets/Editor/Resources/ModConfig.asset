@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 615501dbe4f3fe94fbf4b564abb10237, type: 3}
+  m_Name: ModConfig
+  m_EditorClassIdentifier: 
+  id: shatteredMath
+  title: Shattered Math
+  author: rand06
+  description: "\u0423\u0441\u043B\u043E\u0436\u043D\u0435\u043D\u043D\u0430\u044F
+    \u0432\u0435\u0440\u0441\u0438\u044F Fractured Math. \u0412\u044B\u043A\u043B\u0430\u0434\u044B\u0432\u0430\u044E
+    \u0432 \u0421\u0442\u0438\u043C, \u0447\u0442\u043E\u0431\u044B \u043A\u0442\u043E-\u0443\u0433\u043E\u0434\u043D\u043E
+    \u043C\u043E\u0433 \u043F\u0440\u043E\u0442\u0435\u0441\u0442\u0438\u0440\u043E\u0432\u0430\u0442\u044C
+    \u043C\u043E\u0434, \u043F\u0440\u0435\u0436\u0434\u0435 \u0447\u0435\u043C \u044F
+    \u0437\u0430\u043B\u044C\u044E \u0435\u0433\u043E \u043D\u0430 \u0440\u0435\u043F\u043E\u0437\u0438\u0442\u043E\u0440\u0438\u0439.\n\nP.S.
+    \u041C\u041E\u0414\u0423\u041B\u042C \u0412\u041E\u0417\u041C\u041E\u0416\u041D\u041E
+    \u0420\u0415\u0428\u0418\u0422\u042C"
+  version: 
+  outputFolder: build
+  debugBuild: 1
+  previewImage: {fileID: 2800000, guid: 7062578ae8b31284090b628d9163b813, type: 3}
